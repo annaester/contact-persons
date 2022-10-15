@@ -11,7 +11,7 @@ fetch(API)
       console.log("person", person);
 
       cardbox.innerHTML += `
-      <div>
+      <div class="cardliststyle">
         <p>${person.name.first} ${person.name.last}</p>
         <img src="${person.picture.medium}" alt="picture" />
         <p>${person.location.city}</p>
