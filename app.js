@@ -12,11 +12,24 @@ fetch(API)
 
       cardbox.innerHTML += `
       <div class="cardliststyle">
-        <p>${person.name.first} ${person.name.last}</p>
-        <img src="${person.picture.medium}" alt="picture" />
+      <div class="bg-color">
+      
+      </div>
+      <img class="profilepic" src="${person.picture.medium}" alt="picture" />
+      <div class="bg-white">
+      <div class="name-city">
+      <p class="name">${person.name.first} ${person.name.last}</p>
         <p>${person.location.city}</p>
-        <p>${person.email}</p>
-        <p>${person.phone}</p>
+        </div>
+        <div class="phone-email">
+
+        <a href="mailto:${person.email}"> <img src="images/navigation_icon/email.png"> </a>
+            <p class="email">${person.email}</p>
+
+            <a href="tel:${person.phone}">o</a>
+            <p class="phone">${person.phone}</p>
+        </div>
+        </div>
       </div>
       
       `;
