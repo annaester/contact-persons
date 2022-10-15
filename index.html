@@ -5,15 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meet the team</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/216527a880.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" id="theme" href="stylelist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <main>
       <h1>Meet the team</h1>
+
+      <div class="topbar">
+        <div>
+          <i id="sort" class="fa fa-sort"></i>
+
+          <i class="fa fa-search"></i>
+          <input id="search-bar" class="search" type="text" />
+        </div>
+
+        <div class="order">
+          <i class="fa fa-bars" id="list" onclick="setList()"></i>
+          <i class="fa fa-th-large" id="grid" onclick="setGrid()"></i>
+        </div>
+      </div>
 
       <div class="cardlist" id="cardbox"></div>
     </main>

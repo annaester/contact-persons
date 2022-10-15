@@ -1,5 +1,6 @@
 body {
-  background-color: #ebe9e4;
+  background-color: #dc6bed;
+  font-family: "Work Sans", sans-serif;
 }
 
 main {
@@ -7,6 +8,32 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.topbar {
+  width: 900px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  width: 300px;
+  border: none;
+  height: 20px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.fa-search {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 3px;
+  color: gray;
+}
+
+.order {
+  margin-right: 20px;
 }
 
 .cardgrid {
@@ -21,20 +48,29 @@ main {
 
 .cardliststyle {
   width: 900px;
-  background-color: rgb(235, 143, 143);
+  background-color: #a6b8a8;
   margin: 10px;
   border-radius: 12px;
   height: 110px;
 }
 
+.cardliststyle:nth-child(3n + 0) {
+  background-color: #e8cdad;
+}
+
+.cardliststyle:nth-child(3n + 2) {
+  background-color: #e1d3c7;
+}
+
 .bg-color {
   position: absolute;
-  background-color: #a6b8a8;
   border-radius: 12px;
-  /* display: flex;
-  flex-direction: row; */
   width: 150px;
   height: 110px;
+}
+
+.bg-color:nth-child(2) {
+  background-color: red;
 }
 
 .bg-white {
@@ -59,25 +95,41 @@ main {
 
 .name-city {
   position: absolute;
-  top: 10px;
+  top: 30px;
   margin-left: 70px;
 }
 
 .name {
   font-weight: bold;
+  margin: 5px;
+}
+
+.city {
+  color: #292929;
+  margin: 5px;
 }
 
 .phone-email {
   position: absolute;
   right: 10px;
-  top: 40px;
+  top: 36px;
   display: flex;
 }
 
 .email {
-  margin: 5px;
+  margin: 10px;
+  font-size: 24px;
 }
 
 .phone {
-  margin: 5px;
+  margin: 10px;
+  font-size: 24px;
+}
+
+a {
+  color: black;
+}
+
+a::after {
+  color: black;
 }

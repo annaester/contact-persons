@@ -1,0 +1,135 @@
+body {
+  background-color: #ebe9e4;
+  font-family: "Work Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar {
+  width: 900px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  width: 300px;
+  border: none;
+  height: 20px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.fa-search {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 3px;
+  color: gray;
+}
+
+.order {
+  margin-right: 20px;
+}
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cardlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardliststyle {
+  width: 900px;
+  background-color: #a6b8a8;
+  margin: 10px;
+  border-radius: 12px;
+  height: 110px;
+}
+
+.cardliststyle:nth-child(3n + 0) {
+  background-color: #e8cdad;
+}
+
+.cardliststyle:nth-child(3n + 2) {
+  background-color: #e1d3c7;
+}
+
+.bg-color {
+  position: absolute;
+  border-radius: 12px;
+  width: 150px;
+  height: 110px;
+}
+
+.bg-color:nth-child(2) {
+  background-color: red;
+}
+
+.bg-white {
+  background-color: #fff;
+  position: absolute;
+  width: 820px;
+  height: 110px;
+  margin-left: 80px;
+  border-radius: 40px 12px 12px 0;
+  z-index: 1;
+}
+
+.profilepic {
+  border-radius: 50px;
+  width: 90px;
+  height: 90px;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 3;
+}
+
+.name-city {
+  position: absolute;
+  top: 30px;
+  margin-left: 70px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.city {
+  color: #292929;
+  margin: 5px;
+}
+
+.phone-email {
+  position: absolute;
+  right: 10px;
+  top: 36px;
+  display: flex;
+}
+
+.email {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.phone {
+  margin: 10px;
+  font-size: 24px;
+}
+
+a {
+  color: black;
+}
+
+a::after {
+  color: black;
+}
