@@ -1,5 +1,5 @@
 body {
-  background-color: #dc6bed;
+  background-color: #ebe9e4;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -11,8 +11,8 @@ main {
 }
 
 .topbar {
-  width: 900px;
-  margin-left: 20px;
+  width: 850px;
+  margin: 20px 15px 11px;
   display: flex;
   justify-content: space-between;
 }
@@ -36,22 +36,26 @@ main {
   margin-right: 20px;
 }
 
-.cardgrid {
+/* .hide {
+  display: none;
+} */
+
+/* .cardgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
+.cardlist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.cardlist {
-  display: flex;
-  flex-direction: column;
-}
-
 .cardliststyle {
-  width: 900px;
+  width: 200px;
   background-color: #a6b8a8;
   margin: 10px;
-  border-radius: 12px;
-  height: 110px;
+  border-radius: 15px;
+  height: 400px;
 }
 
 .cardliststyle:nth-child(3n + 0) {
@@ -64,7 +68,7 @@ main {
 
 .bg-color {
   position: absolute;
-  border-radius: 12px;
+  border-radius: 15px;
   width: 150px;
   height: 110px;
 }
@@ -76,32 +80,35 @@ main {
 .bg-white {
   background-color: #fff;
   position: absolute;
-  width: 820px;
-  height: 110px;
-  margin-left: 80px;
-  border-radius: 40px 12px 12px 0;
+  width: 200px;
+  height: 200px;
+  margin-top: 200px;
+  /* margin-left: 80px; */
+  border-radius: 40px 0px 15px 15px;
   z-index: 1;
 }
 
 .profilepic {
-  border-radius: 50px;
-  width: 90px;
-  height: 90px;
-  margin-left: 40px;
-  margin-top: 10px;
+  border-radius: 70px;
+  width: 110px;
+  height: 110px;
+  margin-left: 45px;
+  margin-top: 145px;
   position: absolute;
   z-index: 3;
 }
 
 .name-city {
   position: absolute;
-  top: 30px;
-  margin-left: 70px;
+  top: -150px;
+  width: 200px;
+  text-align: center;
 }
 
 .name {
   font-weight: bold;
-  margin: 5px;
+  margin-bottom: 180px;
+  font-size: 16px;
 }
 
 .city {
@@ -111,8 +118,9 @@ main {
 
 .phone-email {
   position: absolute;
-  right: 10px;
-  top: 36px;
+  text-align: center;
+  right: 55px;
+  top: 130px;
   display: flex;
 }
 

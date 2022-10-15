@@ -60,16 +60,22 @@ searchBar.addEventListener("click", (e) => {
 
 function setGrid() {
   const theme = document.getElementById("theme");
+  const grid = document.getElementById("grid");
+  const list = document.getElementById("list");
 
   if (theme.getAttribute("href") == "stylelist.css") {
     theme.setAttribute("href", "stylegrid.css");
+    // grid.classList.add("hide");
   }
 }
 
 function setList() {
   const theme = document.getElementById("theme");
+  const grid = document.getElementById("grid");
+  const list = document.getElementsByClassName("list");
 
   if (theme.getAttribute("href") == "stylegrid.css") {
     theme.setAttribute("href", "stylelist.css");
+    //list.classList.remove("hide");
   }
 }
