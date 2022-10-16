@@ -36,6 +36,10 @@ main {
   margin-right: 20px;
 }
 
+#list {
+  display: none;
+}
+
 .hide {
   display: none;
 }
