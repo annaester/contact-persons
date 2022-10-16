@@ -44,10 +44,10 @@ main {
   display: none;
 }
 
-.cardgrid {
+/* .cardgrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+} */
 
 .cardlist {
   display: flex;
@@ -68,17 +68,6 @@ main {
 
 .cardliststyle:nth-child(3n + 2) {
   background-color: #e1d3c7;
-}
-
-.bg-color {
-  position: absolute;
-  border-radius: 12px;
-  width: 150px;
-  height: 110px;
-}
-
-.bg-color:nth-child(2) {
-  background-color: red;
 }
 
 .bg-white {

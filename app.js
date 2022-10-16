@@ -30,8 +30,9 @@ fetch("https://randomuser.me/api/?results=10")
     peopleArray.forEach((person) => {
       cardbox.innerHTML += `
           <div class="cardliststyle">
-          
-            <img class="profilepic" src="${person.picture.medium}" alt="picture" />
+          <img class="profilepic" src="${person.picture.medium}" alt="picture" />
+          <span class="circle"></span>
+          <span class="square"></span>
             <div class="bg-white">
             <div class="name-city">
               <p class="name">${person.name.first} ${person.name.last}</p>
