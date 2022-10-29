@@ -120,6 +120,7 @@ function setGrid() {
   if (theme.getAttribute("href") == "stylelist.css") {
     theme.setAttribute("href", "stylegrid.css");
   }
+  console.log("grid");
 }
 
 function setList() {
@@ -128,4 +129,5 @@ function setList() {
   if (theme.getAttribute("href") == "stylegrid.css") {
     theme.setAttribute("href", "stylelist.css");
   }
+  console.log("list", theme);
 }

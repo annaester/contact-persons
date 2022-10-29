@@ -10,6 +10,15 @@ main {
   align-items: center;
 }
 
+.headerbox {
+  width: 1000px;
+}
+
+h1 {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
 .topbar {
   width: 850px;
   margin: 20px 15px 11px;
@@ -39,15 +48,6 @@ main {
 #grid {
   display: none;
 }
-
-/* .hide {
-  display: none;
-} */
-
-/* .cardgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
 
 .cardlist {
   display: grid;
