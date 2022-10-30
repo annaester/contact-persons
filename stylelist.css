@@ -53,11 +53,6 @@ h1 {
   display: none;
 }
 
-/* .cardgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
-
 .cardlist {
   display: flex;
   flex-direction: column;
