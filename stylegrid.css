@@ -97,17 +97,12 @@ h1 {
   height: 110px;
 }
 
-.bg-color:nth-child(2) {
-  background-color: red;
-}
-
 .bg-white {
   background-color: #fff;
   position: absolute;
   width: 200px;
   height: 200px;
   margin-top: 200px;
-  /* margin-left: 80px; */
   border-radius: 40px 0px 15px 15px;
   z-index: 1;
 }
@@ -164,4 +159,120 @@ a {
 
 a::after {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .headerbox {
+    width: 290px;
+  }
+
+  h1 {
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 24px;
+  }
+
+  .topbar {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+  }
+
+  .search {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .fa-sort {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .fa-search {
+    margin-left: 270px;
+  }
+
+  .order {
+    margin-top: 40px;
+    margin-left: -40px;
+  }
+
+  #grid {
+    display: none;
+  }
+
+  .cardlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardliststyle {
+    width: 135px;
+    height: 220px;
+  }
+
+  .square {
+    margin-left: 85px;
+    margin-top: 60px;
+  }
+
+  .circle {
+    margin-left: 84px;
+    margin-top: 55px;
+    width: 51px;
+    height: 51px;
+  }
+
+  .bg-color {
+    width: 135px;
+    height: 50px;
+  }
+
+  .bg-white {
+    width: 135px;
+    height: 115px;
+    margin-top: 105px;
+  }
+
+  .profilepic {
+    border-radius: 70px;
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+    margin-top: 55px;
+  }
+
+  .name-city {
+    top: -90px;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  .name {
+    margin-bottom: 160px;
+    font-size: 11px;
+  }
+
+  .city {
+    color: #292929;
+    margin: -45px 5px 5px 5px;
+    font-size: 11px;
+  }
+
+  .phone-email {
+    text-align: center;
+    right: 35px;
+    top: 80px;
+  }
+
+  .email {
+    margin: 7px;
+    font-size: 16px;
+  }
+
+  .phone {
+    margin: 7px;
+    font-size: 16px;
+  }
 }

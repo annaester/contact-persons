@@ -6,7 +6,7 @@ const sort = document.getElementById("sort");
 
 const peopleArray = [];
 
-fetch("https://randomuser.me/api/?results=10")
+fetch("https://randomuser.me/api/?results=50")
   .then((response) => response.json())
   .then(function (result) {
     console.log("Result", result);
@@ -107,9 +107,6 @@ sort.addEventListener("click", function () {
     
 `;
   });
-
-  console.log("helloooo", peopleArray);
-  console.log("helloooo2", peopleArray[0].name.first);
 });
 
 // SETTING THE LIST/GRID-LAYOUT
@@ -118,16 +115,16 @@ function setGrid() {
   const theme = document.getElementById("theme");
 
   if (theme.getAttribute("href") == "stylelist.css") {
+    theme.removeAttribute("href", "stylelist.css");
     theme.setAttribute("href", "stylegrid.css");
   }
-  console.log("grid");
 }
 
 function setList() {
   const theme = document.getElementById("theme");
 
   if (theme.getAttribute("href") == "stylegrid.css") {
+    theme.removeAttribute("href", "stylegrid.css");
     theme.setAttribute("href", "stylelist.css");
   }
-  console.log("list", theme);
 }
