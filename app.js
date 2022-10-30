@@ -13,7 +13,6 @@ fetch("https://randomuser.me/api/?results=50")
     for (var i = 0; i < result.results.length; i++) {
       peopleArray.push(result.results[i]);
     }
-    console.log("peoplearray", peopleArray);
 
     peopleArray.sort(function (a, b) {
       if (a.name.last < b.name.last) {
@@ -62,7 +61,6 @@ fetch("https://randomuser.me/api/?results=50")
         filteredPeople.forEach((person) => {
           cardbox.innerHTML += `
             <div class="cardliststyle">
-            
               <img class="profilepic" src="${person.picture.medium}" alt="picture" />
               <div class="bg-white">
               <div class="name-city">
@@ -91,7 +89,6 @@ sort.addEventListener("click", function () {
   peopleArray.forEach((person) => {
     cardbox.innerHTML += `
     <div class="cardliststyle">
-    
       <img class="profilepic" src="${person.picture.medium}" alt="picture" />
       <div class="bg-white">
       <div class="name-city">
